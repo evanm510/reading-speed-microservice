@@ -62,3 +62,7 @@ Reading Time Calculator Response:
 
 { "hours": hours, "minutes": minutes }
 Ensure to handle responses appropriately in your application, displaying or processing the data as needed.
+
+
+<img width="778" alt="Screenshot 2024-02-23 at 9 13 46 AM" src="https://github.com/evanm510/reading-speed-microservice/assets/112014100/d7e84c70-c604-4d8c-86c4-8c9abc2d698d">
+
