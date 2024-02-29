@@ -4,6 +4,25 @@ const port = 3000;
 
 app.use(express.json());
 
+const cors = require("cors");
+
+app.use(
+  cors({
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"],
+    allowedHeaders: [
+      "Content-Type",
+      "Origin",
+      "X-Requested-With",
+      "Accept",
+      "x-client-key",
+      "x-client-token",
+      "x-client-secret",
+      "Authorization",
+    ],
+    credentials: true,
+  })
+);
+
 app.post("/reading-speed-test", (req, res) => {
   const { time, words } = req.body;
   const wordsPerMinute = Math.floor((words / time) * 60);
